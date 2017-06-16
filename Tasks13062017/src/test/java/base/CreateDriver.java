@@ -18,8 +18,10 @@ public class CreateDriver
 	{
 		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		driver=new ChromeDriver();
-		
+		//For web tables
 		//driver.get("http://only-testing-blog.blogspot.in/2014/05/form.html");
+		
+		//For radio and check boxes
 		driver.get("http://www.ironspider.ca/forms/checkradio.htm");
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);

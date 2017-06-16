@@ -4,9 +4,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
+//import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
@@ -38,7 +38,7 @@ public class SaveScreenshot
 			WebElement ele = driver.findElement(By.xpath("//div[@class='aqWyJi']"));
 			
 			//To create folder for saving screenshot
-			File dir = new File("D://mysoftware//bhavna//Tasks13062017//Screenshot");
+			File dir = new File("D://mysoftware//bhavna//Tasks13062017//ScreenShot");
 			if (!dir.exists()) 
 			{
 				System.out.println("File created " + dir);
@@ -47,12 +47,7 @@ public class SaveScreenshot
 			
 			Thread.sleep(5000);
 			takescreenShot(ele);
-			
-			//driver.navigate().to("http://www.healthandyoga.com/");
-			//Thread.sleep(5000);
-			
-			//takescreenShot(ele);
-			
+					
 		}
 		
 			public static void takescreenShot(WebElement element) throws IOException

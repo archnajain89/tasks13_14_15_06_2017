@@ -41,7 +41,7 @@ public class CheckboxRadiobtn
 			cvalue=chkboxes.get(i).isSelected();
 			System.out.println("check box no "+ i+" & check box is selected"+cvalue);
 			
-			//to select even check boxes
+			/*//to select even check boxes
 			int div=(i+1)%2;
 			System.out.println(div);
 			if(cvalue==false && div==0)
@@ -49,21 +49,21 @@ public class CheckboxRadiobtn
 				chkboxes.get(i).click();
 			}
 			
-			Thread.sleep(1000);
+			Thread.sleep(1000);*/
 			
-			/*//to select odd check boxes
+			//to select odd check boxes
 			int div1=(i)%2;
 			System.out.println(div1);
 			if(cvalue==false && div1==0)
 			{
 				chkboxes.get(i).click();
-			}*/
+			}
 			}
 		}
 		catch(Exception e)
 		{	}
 		
-		//To select radio button......
+	/*	//To select radio button......
 		try
 		{
 			for(int j=0;j <radiobtn_size;j++)
@@ -88,6 +88,6 @@ public class CheckboxRadiobtn
 	catch(Exception e)
 	{
 		
-	}		
+	}*/		
 	}
 }

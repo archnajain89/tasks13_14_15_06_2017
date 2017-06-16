@@ -20,8 +20,8 @@ public class Handlepopups
 		driver.manage().window().maximize();
 		Handlepopups hp=new Handlepopups();
 		//hp.alertHandle();
-		//hp.handleWindowpopups();
-		hp.handleframes();
+		hp.handleWindowpopups();
+		//hp.handleframes();
 		
 	}
 		
